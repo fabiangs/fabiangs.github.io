@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Fabian Galindo</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Fabian Galindo</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()" >About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()" >Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()" >Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.jpeg" alt="Fabian Galindo profile picture" class="profile-pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Fabian Galindo</h1>
+            <p class="section__text__p2">Electrical Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" > Download CV (TBD)</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/fabian-galindo'">
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://www.github.com/fabiangs'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.jpeg" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience-icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>7+ years <br/>Security researcher</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education-icon" class="icon">
+                        <h3>Education</h3><br/>
+                        <h4>B.Sc. Electronics and Computer Engineering</h4>
+                        <p>Technological Institute of Monterrey (ITESM) - 2016</p><br/>
+                        <h4>Ms.Sc. Electrical Engineering</h4>
+                        <p>Northwestern University - Present</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+
+                        Electronics and Computer engineer. Security Researcher. Master's degree student in Electrical Engineering. And future Quantum Computer Researcher.
+                        After a challenging, exciting and successful 8-year career working as a Security Researcher at Intel Corporation, I decided to pursue a long-desired career in Quantum Computing. I am looking forward to work in Quantum Hardware and develop and improve qubit technologies.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience (TBD)</h1>
+        
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects (TBD)</h1>
+        
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/email.png" 
+                alt="email icon" 
+                class="icon contact-icon email-icon">
+                <p><a href="mailto:infosecfabs@gmail.com">infosefabs@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="Linkedin icon" 
+                class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/fabian-galindo">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Fabian Galindo. All Rights reserved.</p>
+    </footer>
+  <script src="script.js"></script>    
+</body>
+</html>
